@@ -135,3 +135,65 @@ button:hover {
 }
 
 }
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    color: #fff;
+    background-image: url(background\ img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+.content {
+    max-width: 750px;
+    padding: 80px 0 0 5%;
+}
+.content h3 {
+    font-size: 40px;
+}
+.content h1 {
+    font-size: 100px;
+    line-height: 1.2;
+}
+.content h1 span{
+    color: var(--secondary-color);
+}
+.content button {
+    z-index: 222;
+    margin: 20px 10px;
+}
+.content h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--primary-color);
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #2e2e2e 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 100%;
+    background-clip: text;
+    transition: 1s;
+    cursor: default;
+}
+.content h2:hover {
+    background-position: 0;
+}
+@media screen and (max-width: 950px) {
+    .hero {
+        height: 70vh;
+    }
+    .content h3 {
+        font-size: 50px;
+    }
+    .content h2 {
+        font-size: 30px;
+        -webkit-text-stroke: .5px;
+    }
+    .content .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+}
